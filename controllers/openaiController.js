@@ -31,7 +31,7 @@ const generateImage = async (req, res) => {
           }
         res.status(400).json({
             success: false,
-            error: 'The image could not be generated'
+            error: 'The image could not be generated.'
         });
     }
 }
