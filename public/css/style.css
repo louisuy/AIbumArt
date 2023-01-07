@@ -2,16 +2,110 @@
 
 body {
     font-family: sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-    background: #f4f4f4;
-    
+    color: #f4f4f4;
+    background: #000;
+    height: 100%;
+}
+  
+#bg-image {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../assets/albumart.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: blur(5px);
+    opacity: 0.5;
+    z-index: -1;
 }
 
-.center {
-    display: block;
-    margin: 0 auto;
-    border: 3px solid green;
-    /* padding: 10px; */
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    color: #f4f4f4;
+    background-color: #222;
 }
+
+.navbar img {
+    height: 60%;
+    margin: 10px;
+}
+
+.svg-logo{
+    filter: invert();
+}
+
+.hidden {
+    display: none;
+}
+
+.showcase{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* vertical-align: middle; */
+    margin: auto;
+    /* background-color: red; */
+}
+
+.albumart img{
+    min-height:100%;
+}
+
+.albumart{
+    /* background-color: green; */
+    height: 80%;
+}
+
+.form{
+    width: 20vw;
+    /* background-color: aqua; */
+}
+
+/* Hide the radio buttons */
+input[type="radio"] {
+    display: none;
+}
+  
+/* Style the label as a toggle */
+input[type="radio"] + label {
+    display: block;
+    /* background-color: #ddd; */
+    border: 4px;
+    border-color: white;
+    padding: 15px;
+    width: 50%;
+    border-radius:10px;
+    transition: background-color 0.5s;
+}
+  
+/* Style the selected label */
+input[type="radio"]:checked + label {
+    background-color: #2196f3;
+}
+
+#radio-list {
+    max-width: 200px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    overflow-x: scroll;
+    position: relative;
+}
+
+#radio-list::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+  }
+  
+  #radio-list::-webkit-scrollbar-thumb {
+    border: 1px solid #2196f3;
+    border-radius: 10px;
+    background-color: #2196f3;
+  }

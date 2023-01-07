@@ -1,79 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="stylesheet" href="css/spinner.css" /> -->
-    <script src="js/main.js" defer></script>
-    <title>AiMage</title>
-  </head>
-  <body>
-    <header>
-      <div class="navbar">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- <link rel="stylesheet" href="css/spinner.css" /> -->
+  <script src="js/main.js" defer></script>
+  <title>AiMage</title>
+</head>
+<body>
+  <nav class="navbar">
+      <img src="assets/peach.svg" alt="AIbumArt" class="svg-logo"> AIbumArt
+  </nav>
 
-        <div class="logo">
-          <h2>AiMage</h2>
-        </div>
-                <div class="nav-links">
-          <ul>
-            <li>
-              <a href="https://beta.openai.com/docs" target="_blank">
-                OpenAI API Docs
-              </a>
+  <div id="bg-image"></div>
 
-            </li>
-            <li>
-              <a href="/index.html">
-                GPT
-              </a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </header>
-
-    <main>
-
-      <!-- <form id="lyric-form">
-        <label for="track-name">Track name:</label><br>
-        <input type="text" id="track-name" name="track-name"><br>
-        <button type="submit">Search</button>
-      </form> 
-      <br>
-      <div id="result"></div> -->
-
-        <section class="image">
-            <div class="image-container">
-              <h2 class="msg"></h2>
-              <img src="/placeholder.png" alt="" id="image" class="image"/>
-            </div>
-        </section>
-
-      <section class="">
-
-        <form id="image-form">
-          <div class="form-control">
-            <input type="text" id="prompt" placeholder="Enter Text" />
-          </div>
-
-          <div class="form-control">
-            <select name="size" id="size">
-              <option value="small" selected>Small</option>
-              <option value="medium" >Medium</option>
-              <option value="large" >Large</option>
-            </select>
-          </div>
-
-          <button type="submit" class="btn">Generate</button>
-        </form>
+  <div class="showcase">
+      <section class="albumart">
+          <img src="assets/albumart.png" id="image" class="image">
       </section>
-
-
-    </main>
-
-    <div class="spinner"></div>
-  </body>
+  
+      <section class="form">
+          <form>
+              
+              <div>
+                  <p>Genre</p>
+                  <div id="radio-list">
+                      <input type="radio" id="genre1" name="genre" value="R&B" checked>
+                      <label for="genre1">R&B</label><br>
+                      <input type="radio" id="genre2" name="genre" value="Rap">
+                      <label for="genre2">Rap</label><br>
+                      <input type="radio" id="genre3" name="genre" value="Rock">
+                      <label for="genre3">Rock</label><br>
+                      <input type="radio" id="genre4" name="genre" value="Jazz">
+                      <label for="genre4">Jazz</label><br>
+                      <input type="radio" id="genre1" name="genre" value="R&B">
+                      <label for="genre1">R&B</label><br>
+                      <input type="radio" id="genre2" name="genre" value="Rap">
+                      <label for="genre2">Rap</label><br>
+                      <input type="radio" id="genre3" name="genre" value="Rock">
+                      <label for="genre3">Rock</label><br>
+                      <input type="radio" id="genre4" name="genre" value="Jazz">
+                      <label for="genre4">Jazz</label><br>
+                  </div>
+              </div>
+              
+              <div>
+                  <p>Mood</p>
+                  <div id="radio-list">
+                      <input type="radio" id="mood1" name="mood" value="Happy" checked>
+                      <label for="mood1">Happy</label><br>
+                      <input type="radio" id="mood2" name="mood" value="Sad">
+                      <label for="mood2">Sad</label><br>
+                      <input type="radio" id="mood3" name="mood" value="Dark">
+                      <label for="mood3">Dark</label><br>
+                      <input type="radio" id="mood4" name="mood" value="Epic">
+                      <label for="mood4">Epic</label><br>
+                  </div>
+              </div>
+  
+              <div>
+                  <p>Environment</p>
+                  <div id="radio-list">
+                      <input type="radio" id="time1" name="time" value="Dawn" checked>
+                      <label for="time1">Dawn</label><br>
+                      <input type="radio" id="time2" name="time" value="Morning">
+                      <label for="time2">Morning</label><br>
+                      <input type="radio" id="time3" name="time" value="Golden Hour">
+                      <label for="time3">Sunset</label><br>
+                      <input type="radio" id="time4" name="time" value="Night">
+                      <label for="time4">Night</label><br>
+                  </div>
+              </div>
+          </form>
+          
+          <button onclick="onImageSubmit()">Submit</button>
+  
+          <p id="results"></p>
+          <p class="msg"></p>
+      </section>
+  </div>
+</body>
 </html>
