@@ -1,0 +1,17 @@
+@import "normalize.css";
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background: #f4f4f4;
+    
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid green;
+    /* padding: 10px; */
+}

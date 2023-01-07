@@ -1,0 +1,25 @@
+[debug] [2023-01-05T21:36:52.826Z] ----------------------------------------------------------------------
+[debug] [2023-01-05T21:36:52.828Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ablro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-01-05T21:36:52.828Z] CLI Version:   11.19.0
+[debug] [2023-01-05T21:36:52.828Z] Platform:      win32
+[debug] [2023-01-05T21:36:52.828Z] Node Version:  v18.12.1
+[debug] [2023-01-05T21:36:52.829Z] Time:          Fri Jan 06 2023 01:36:52 GMT+0400 (Gulf Standard Time)
+[debug] [2023-01-05T21:36:52.829Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-05T21:36:52.836Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-05T21:36:52.836Z] > authorizing via signed-in user (abl.uycubillas123@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Dev\API\AiMage
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+

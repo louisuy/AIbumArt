@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/spinner.css" />
-
+    <!-- <link rel="stylesheet" href="css/spinner.css" /> -->
     <script src="js/main.js" defer></script>
     <title>AiMage</title>
   </head>
@@ -17,7 +16,6 @@
         <div class="logo">
           <h2>AiMage</h2>
         </div>
-
                 <div class="nav-links">
           <ul>
             <li>
@@ -27,7 +25,7 @@
 
             </li>
             <li>
-              <a href="../public/traversy.html">
+              <a href="/index.html">
                 GPT
               </a>
             </li>
@@ -39,18 +37,28 @@
 
     <main>
 
+      <!-- <form id="lyric-form">
+        <label for="track-name">Track name:</label><br>
+        <input type="text" id="track-name" name="track-name"><br>
+        <button type="submit">Search</button>
+      </form> 
+      <br>
+      <div id="result"></div> -->
+
         <section class="image">
             <div class="image-container">
               <h2 class="msg"></h2>
-              <img src="../placeholder.png" alt="" id="image" class="image"/>
+              <img src="/placeholder.png" alt="" id="image" class="image"/>
             </div>
         </section>
 
-      <section class="showcase">
+      <section class="">
+
         <form id="image-form">
           <div class="form-control">
             <input type="text" id="prompt" placeholder="Enter Text" />
           </div>
+
           <div class="form-control">
             <select name="size" id="size">
               <option value="small" selected>Small</option>
@@ -58,6 +66,7 @@
               <option value="large" >Large</option>
             </select>
           </div>
+
           <button type="submit" class="btn">Generate</button>
         </form>
       </section>
