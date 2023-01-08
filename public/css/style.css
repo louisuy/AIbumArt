@@ -1,7 +1,8 @@
 @import "normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow&display=swap');
 
 body {
-    font-family: sans-serif;
+    font-family: 'Pragati Narrow', sans-serif;
     color: #f4f4f4;
     background: #000;
     height: 100%;
@@ -69,17 +70,22 @@ body {
     /* background-color: aqua; */
 }
 
+.optionlist h1{
+    margin-bottom: 10px;
+}
+
 /* Hide the radio buttons */
 input[type="radio"] {
     display: none;
+    
 }
   
 /* Style the label as a toggle */
 input[type="radio"] + label {
     display: block;
-    /* background-color: #ddd; */
-    border: 4px;
-    border-color: white;
+    background-color: rgba(0, 0, 0, 0.048);
+    margin-right: 10px;
+    margin-bottom: 5px;
     padding: 15px;
     width: 50%;
     border-radius:10px;
@@ -88,13 +94,14 @@ input[type="radio"] + label {
   
 /* Style the selected label */
 input[type="radio"]:checked + label {
-    background-color: #2196f3;
+    background-color: rgba(0, 0, 0, 0.425);
+    border: 4px;
+    border-color: white;
 }
 
 #radio-list {
     max-width: 200px;
     display: flex;
-    /* flex-wrap: wrap; */
     overflow-x: scroll;
     position: relative;
 }
@@ -104,8 +111,42 @@ input[type="radio"]:checked + label {
     background-color: transparent;
   }
   
-  #radio-list::-webkit-scrollbar-thumb {
-    border: 1px solid #2196f3;
+#radio-list::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: #2196f3;
-  }
+    background-color: #ffffff11;
+}
+
+.submit{
+    width: 60%;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.btn{
+    height: 2em;
+    border: none;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: 700;
+    margin: 0.5rem;
+    width: 50%;
+}
+
+#submitbutton{
+    background-color: rgba(66, 196, 99, 0.26);
+    transition: background-color 0.5s;
+    color: #f4f4f4;
+}
+#submitbutton:hover{
+    background-color: rgb(66, 196, 99);
+}
+
+#downloadbutton{
+    background-color: #ffffff65;
+    transition: background-color 0.5s;
+}
+#downloadbutton:hover{
+    background-color: #ffffff;
+}
