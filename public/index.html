@@ -5,13 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- <link rel="stylesheet" href="css/spinner.css" /> -->
   <script src="js/main.js" defer></script>
-  <title>AiMage</title>
+  <title>AIbumArt</title>
 </head>
 <body>
   <nav class="navbar">
-      <img src="assets/peach.svg" alt="AIbumArt" class="svg-logo"> AIbumArt
+      <img src="assets/peach.svg" alt="AIbumArt" class="svg-logo">
+      <h1>AIbumArt</h1>
   </nav>
 
   <div id="bg-image"></div>
@@ -24,8 +26,8 @@
       <section class="form">
           <form>
               
-              <div>
-                  <p>Genre</p>
+              <div class="optionlist">
+                  <h1>Genre</h1>
                   <div id="radio-list">
                       <input type="radio" id="genre1" name="genre" value="R&B" checked>
                       <label for="genre1">R&B</label><br>
@@ -46,8 +48,8 @@
                   </div>
               </div>
               
-              <div>
-                  <p>Mood</p>
+              <div class="optionlist">
+                  <h1>Mood</h1>
                   <div id="radio-list">
                       <input type="radio" id="mood1" name="mood" value="Happy" checked>
                       <label for="mood1">Happy</label><br>
@@ -60,9 +62,9 @@
                   </div>
               </div>
   
-              <div>
-                  <p>Environment</p>
-                  <div id="radio-list">
+              <div class="optionlist">
+                  <h1>Environment</h1> <!-- Option name -->
+                  <div id="radio-list"> <!-- Using a radio input, disguised as cards in styling -->
                       <input type="radio" id="time1" name="time" value="Dawn" checked>
                       <label for="time1">Dawn</label><br>
                       <input type="radio" id="time2" name="time" value="Morning">
@@ -75,9 +77,14 @@
               </div>
           </form>
           
-          <button onclick="onImageSubmit()">Submit</button>
+          <div class="submit">
+            <!-- This button calls a function in an external JS file. -->
+            <!-- It will feed the info from the form, and replace the image in the HTML and CSS. -->
+            <button onclick="onImageSubmit()" class="btn" id="submitbutton">Submit</button>
+            <!-- <button class="btn" id="downloadbutton"><i class="fa fa-download"></i></button> -->
+          </div>
   
-          <p id="results"></p>
+          <!-- <p id="results"></p> -->
           <p class="msg"></p>
       </section>
   </div>
